@@ -9,3 +9,4 @@ from langdetect import detect
 for text in texts:
     print(f"'{text}' -> {detect(text)}")
     print('hello,worlddddd')
+    print('hello, Yevhen')
