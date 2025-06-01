@@ -7,4 +7,3 @@ digit_4 = (number // 10) % 10
 digit_5 = number % 10
 print ( digit_5,digit_4,digit_3,digit_2,digit_1 )
 
-
