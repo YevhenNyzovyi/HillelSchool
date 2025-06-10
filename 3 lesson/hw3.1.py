@@ -1,5 +1,5 @@
 first_input_number = float(input('Введіть перше число: '))
-user_input_action = input('Введіть дію, яку хочете застосувати до чисел: ')
+user_input_action = input('Введіть просту математичну дію, яку хочете застосувати до чисел (+, -, *, /): ')
 second_input_number = float(input('Введіть друге число: '))
 result = None
 
@@ -14,8 +14,8 @@ elif user_input_action == "/":
         print('Не можна ділити на нуль, спробуйте інше число')
     else:
         result = first_input_number / second_input_number
+else:
+    print(f"Помилка: невідома дія '{user_input_action}'")
 
 if result is not None:
     print(f"Результат: {first_input_number} {user_input_action} {second_input_number} = {result}")
-
-
