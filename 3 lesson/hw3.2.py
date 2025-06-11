@@ -1,4 +1,5 @@
 numbers = [1, 34, 56, 78, 89]
-new_numbers = numbers.pop(4)
-numbers.insert (0, (new_numbers))
+if len(numbers) > 1:
+    last_element = numbers.pop()
+    numbers.insert(0, last_element)
 print(numbers)
