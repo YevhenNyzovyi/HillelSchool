@@ -1,6 +1,7 @@
 my_lst = [2, 5, 66, 7, 89, 32, 11]
-elements_at_even_indices = my_lst[::2]
-sum_elements = sum(elements_at_even_indices)
-last_element = my_lst[-1]
-final_result = sum_elements * last_element
+final_result = 0
+if my_lst:
+    final_result = sum(my_lst[::2]) * my_lst[-1]
+else:
+    final_result = 0
 print(final_result)
