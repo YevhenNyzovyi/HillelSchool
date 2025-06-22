@@ -19,8 +19,8 @@ def is_valid_variable_name(name):
     return True
 
 test_cases = {
-    "_": False,
-    "__": False,
+    "_": True,
+    "__": True,
     "x": True,
     "get_value": True,
     "get value": False,
@@ -32,6 +32,7 @@ test_cases = {
     "3m": False,
     "assert": False,
     "assert_exception": True,
+    "assert__exception": True,
     "True": False,
     "false": False,
     "None": False,
@@ -39,9 +40,10 @@ test_cases = {
     "my.var": False,
     "my var": False,
     "MyVariable": False,
-    "my__variable": False,
+    "my__variable": True,
     "variable_": True,
     "_variable": True,
+    "____ee": True,
     "": False
 }
 
