@@ -5,10 +5,8 @@ def is_valid_variable_name(name):
 
     if not name or \
        name in keyword.kwlist or \
-       name == '_' or \
        name[0].isdigit() or \
-       not name == name.lower() or \
-       '__' in name:
+       not name == name.lower():
         return False
 
     allowed_chars_string = string.ascii_lowercase + string.digits + '_'
